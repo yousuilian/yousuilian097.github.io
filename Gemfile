@@ -11,3 +11,6 @@ end
 
 gem 'github-pages'
 gem 'connection_pool', '2.5.0'
+
+# Fix timezone data issue on Windows (tzinfo needs this)
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
